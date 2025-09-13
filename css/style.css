@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delicious+Handrawn&family=Leckerli+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+:root {
+    --rosaescuro: #B9375D;
+    --branco: #EEEEEE;
+    --segundacor: #F5EFE6;
+    --blue: #70bbd4;
+    --preto: #000000;
+}
+.background-rosa {
+    background: var(--rosaescuro);
+}
+.container {
+    max-width: 1440px;
+    margin: 0 5%;
+    margin: 0 auto;
+    
+}
+
+/* classe do site */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo  {
+    font-family: 'Leckerli One', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+
+}
+ul li{
+    margin: 0 35px;
+    font-size: 18px;
+}
+ul li a{
+    color: var(--branco);
+}
