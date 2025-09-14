@@ -27,6 +27,13 @@ body {
     margin: 0 auto;
     
 }
+.botao {
+    padding: 10px 25px;
+    color: var(--branco);
+    background: var(--rosaescuro);
+    border: none;
+    cursor: pointer;
+}
 
 /* classe do site */
 
@@ -34,6 +41,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 .logo  {
     font-family: 'Leckerli One', cursive;
@@ -53,4 +61,11 @@ ul li{
 }
 ul li a{
     color: var(--branco);
+}
+/*main */
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
 }
