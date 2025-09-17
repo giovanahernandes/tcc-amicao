@@ -13,9 +13,9 @@ body {
 }
 :root {
     --rosaescuro: #B9375D;
-    --branco: #EEEEEE;
-    --segundacor: #F5EFE6;
-    --blue: #70bbd4;
+    --branco: white;
+    --segundacor: #F7EEE4;
+    --blue: #94CDE0;
     --preto: #000000;
 }
 .background-rosa {
@@ -28,6 +28,10 @@ body {
     
 }
 
+section,
+footer {
+    padding: 2.7rem 0;
+}
 /* classe do site */
 
 nav {
@@ -107,9 +111,56 @@ main .container{
     position: relative;
     z-index: 10;
 }
+.resultados{
+    background-color: var(--segundacor);
 
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resultados .resultados-texto{
+    color: var(--rosaescuro);
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+.resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    color: var(--rosaescuro);
+}
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 25px;
+    font-size: 20px;
+}
+.resultados .resultados-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+}
 /*responsivo*/
-
+/*diferenciais*/
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--segundacor);
+}
+.diferenciais .card img{
+    width: 55px;
+}
+.diferenciais .card .titulo{
+    margin: 3px 0;
+    font-weight: 600;
+}
 @media (max-width: 960px) {
     .menu-icon{
         display: block;
@@ -146,4 +197,26 @@ main .container{
     main .container .principal div{
         justify-content: center;
     }
+    .resultados .container{
+        flex-direction: column;
+    }
+    .resultados .resultados-texto,
+    .resultados .resultados-numero{
+        width: 100%;
+        text-align: center;
+    }
+    .resultados-numero{
+        margin-top: 30px;
+    }
 }
+@media (max-width: 440px) {
+    .resultados .resultados-numero {
+        flex-direction: column;
+    }
+
+    main .container .principal h1 {
+        font-size: 3rem;
+    }
+}
+
+
