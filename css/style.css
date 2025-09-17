@@ -153,6 +153,10 @@ main .container{
     padding: 30px;
     border-radius: 15px;
     background-color: var(--segundacor);
+    transition: 0.3s;
+}
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #bcbab7;
 }
 .diferenciais .card img{
     width: 55px;
@@ -207,6 +211,20 @@ main .container{
     }
     .resultados-numero{
         margin-top: 30px;
+    }
+    .referencias .container{
+        flex-direction: column;
+    }
+    .referencias .container .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    .diferenciais .card{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 440px) {
