@@ -165,6 +165,50 @@ main .container{
     margin: 3px 0;
     font-weight: 600;
 }
+/*secao dog e pessoa*/
+.casa .container{
+    display: flex;
+    align-items: center;
+}
+.casa .container .casa-img{
+    width: 50%;
+}
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-texto{
+    width: 50%;
+    padding-left: 90px;
+}
+.casa .cata-texto h2{
+    font-size: 2.5rem;
+}
+.casa .casa-texto p{
+    margin: 20px 0;
+    color: black;
+}
+.melhores-tutores .azul{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--blue);
+}
+.melhores-tutores h2{
+    font-size: 2.5rem;
+}
+.melhores-tutores .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.melhores-tutores .cards .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 960px) {
     .menu-icon{
         display: block;
@@ -226,6 +270,16 @@ main .container{
         width: 100%;
         margin-bottom: 30px;
     }
+    .casa .container{
+        flex-direction: column-reverse;
+    }
+    .casa .casa-texto,
+    .casa .casa-img{
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+    }
+
 }
 @media (max-width: 440px) {
     .resultados .resultados-numero {
