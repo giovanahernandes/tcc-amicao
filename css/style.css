@@ -17,6 +17,7 @@ body {
     --segundacor: #F7EEE4;
     --blue: #94CDE0;
     --preto: #000000;
+    --cinza: #606061;
 }
 .background-rosa {
     background: var(--rosaescuro);
@@ -208,10 +209,30 @@ main .container{
     border-radius: 20px;
     box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
 }
+.melhores-tutores .cards img{
+    width: 80px;
+}
+.melhores-tutores .cards .local-casa{
+    margin: 5px 0;
+    color: var(--cinza);
+}
+.melhores-tutores .cards .nome-casa{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.melhores-tutores .cards .contato{
+    margin-bottom: 20px;
+    color: var(--cinza);
+}
+.melhores-tutores .cards .nome-pessoa{
+    font-size: 30px;
+}
 
 @media (max-width: 960px) {
     .menu-icon{
         display: block;
+        margin: 12px 14px 12px 12px;
     }
     .ul{
         position:fixed;
@@ -279,6 +300,7 @@ main .container{
         text-align: center;
         padding: 0%;
     }
+
 
 }
 @media (max-width: 440px) {
