@@ -237,7 +237,30 @@ main .container{
 .melhores-tutores .cards .nome-pessoa{
     font-size: 30px;
 }
-
+.newslatter{
+    background-color: var(--rosaescuro);
+    margin-top: 50px;
+}
+.newslatter .box-newslatter{
+    text-align: center;
+    background-image: url('../img/dog_pata.jpg');
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.newslatter .box-newslatter h2{
+    font-size: 2.5rem;
+}
+.newslatter .box-newslatter p{
+    margin-top: 13px 0;
+}
+.newslatter .box-newslatter input{
+    width: 35;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
 @media (max-width: 960px) {
     .menu-icon{
         display: block;
@@ -315,8 +338,9 @@ main .container{
     }
     .melhores-tutores .card .card-item{
         width: 100%;
-       margin-top: 50px;
+        margin-top: 50px;
         position: center;
+
     }
 
 }
