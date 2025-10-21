@@ -259,7 +259,19 @@ main .container{
     width: 35;
     padding: 15px;
     border-radius: 15px;
-    
+    border: none;
+    outline: none;
+    color: var(--cinza);   
+}
+.newslatter .box-newslatter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    background-color: var(--rosaescuro);
+    cursor: pointer;
 }
 @media (max-width: 960px) {
     .menu-icon{
@@ -341,6 +353,19 @@ main .container{
         margin-top: 50px;
         position: center;
 
+    }
+    .newslatter .box-newslatter {
+        padding: 50px;
+    }
+    .newslatter .box-newslatter h2{
+        font-size: 2rem;
+    }
+    .newslatter .box-newslatter input{
+        width: 90%;
+    }
+    .newslatter .box-newslatter button{
+        width: 50%;
+        margin-top: 20px;
     }
 
 }
