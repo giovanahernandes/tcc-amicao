@@ -395,13 +395,13 @@ footer .container p{
     }
     .melhores-tutores .cards{
         flex-direction: column;
+        align-items: center;
 
     }
-    .melhores-tutores .card .card-item{
+    .melhores-tutores .cards .card-item{
         width: 100%;
-        margin-top: 50px;
-        position: center;
-
+        max-width: 420px;
+        margin-top: 30px;
     }
     .newslatter .box-newslatter {
         padding: 50px;
@@ -419,11 +419,17 @@ footer .container p{
     footer .container{
         grid-template-columns: 1fr;
         gap: 24px;
+        justify-items: center;
+        text-align: center;
     }
     footer .container ul{
         width: 100%;
         margin-bottom: 0;
         min-width: 0;
+        align-items: center;
+    }
+    footer .container .redes-sociais{
+        justify-content: center;
     }
 
 }
