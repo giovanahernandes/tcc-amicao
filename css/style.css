@@ -179,47 +179,72 @@ main .container{
     border-radius: 10px;
 }
 .casa .casa-texto{
-    width: 50%;
     padding-left: 90px;
 }
 .casa .cata-texto h2{
     font-size: 2.5rem;
 }
-.casa .casa-texto p{
+  .casa .casa-texto p{
     margin: 20px 0;
     color: black;
-}
-.melhores-tutores .container{
+  }
+  /* ===== Serviços: estilos da seção de listagens (pet shop e veterinários) — INÍCIO ===== */
+  .melhores-tutores .container{
     margin: 0 20px 0;
-}
-.melhores-tutores .azul{
+  }
+  /* Header da seção (rótulo azul + título) lado a lado */
+  .melhores-tutores > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .melhores-tutores .container h2{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .melhores-tutores .azul{
     font-size: 24px;
     font-weight: 600;
     color: var(--blue);
-}
-.melhores-tutores h2{
+  }
+  .melhores-tutores h2{
     font-size: 2.5rem;
-}
-.melhores-tutores .cards{
+  }
+  .melhores-tutores .cards{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-}
-.melhores-tutores .cards .card-item{
+  }
+  /* Serviços: empilhamento vertical das cards quando .stack-cards é usado */
+  .melhores-tutores .cards.stack-cards{
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+    
+  .melhores-tutores .cards.stack-cards .card-item{
+    width: 100%;
+    max-width: 720px;
+  }
+  .melhores-tutores .cards .card-item{
     width: 30%;
     text-align: center;
     padding: 30px 0;
     border-radius: 20px;
     box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
-}
-.melhores-tutores .cards img{
+  }
+  .melhores-tutores .cards img{
     width: 80px;
-}
-.melhores-tutores .cards .local-casa{
+  }
+  /* ===== Serviços — FIM ===== */
+  .melhores-tutores .cards .local-casa{
     margin: 5px 0;
     color: var(--cinza);
-}
-.melhores-tutores .cards .nome-casa{
+  }
+  .melhores-tutores .cards .nome-casa{
     font-size: 30px;
     font-weight: 500;
 
