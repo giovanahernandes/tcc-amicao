@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delicious+Handrawn&family=Leckerli+One&display=swap');
 
+/* ===== Base & Reset — INÍCIO ===== */
 * {
     margin: 0;
     padding: 0;
@@ -33,8 +34,10 @@ section,
 footer {
     padding: 2.7rem 0;
 }
+/* ===== Base & Reset — FIM ===== */
 /* classe do site */
 
+/* ===== Header & Navegação — INÍCIO ===== */
 nav {
     display: flex;
     justify-content: space-between;
@@ -60,7 +63,9 @@ ul li{
 ul li a{
     color: var(--branco);
 }
+/* ===== Header & Navegação — FIM ===== */
 /*main */
+/* ===== Hero/Main (topo com frase e imagem) — INÍCIO ===== */
 main .container{
     display: flex;
     align-items: center;
@@ -105,17 +110,21 @@ main .container{
 .botao:hover {
   background-color: #a02f50; 
 }
+/* ===== Hero/Main — FIM ===== */
 
 /*menuicon*/
+/* ===== Menu Mobile — INÍCIO ===== */
 .menu-icon{
     display: none;
     position: relative;
     z-index: 10;
 }
+/* ===== Menu Mobile — FIM ===== */
 .resultados{
     background-color: var(--segundacor);
 
 }
+/* ===== Resultados — INÍCIO ===== */
 .resultados .container{
     display: flex;
     align-items: center;
@@ -141,8 +150,10 @@ main .container{
     font-size: 30px;
     font-weight: 600;
 }
+/* ===== Resultados — FIM ===== */
 /*responsivo*/
 /*diferenciais*/
+/* ===== Diferenciais — INÍCIO ===== */
 .diferenciais .container{
     display: flex;
     justify-content: space-between;
@@ -166,7 +177,9 @@ main .container{
     margin: 3px 0;
     font-weight: 600;
 }
+/* ===== Diferenciais — FIM ===== */
 /*secao dog e pessoa*/
+/* ===== Seção Casa (dog e dono) — INÍCIO ===== */
 .casa .container{
     display: flex;
     align-items: center;
@@ -188,6 +201,7 @@ main .container{
     margin: 20px 0;
     color: black;
   }
+/* ===== Seção Casa — FIM ===== */
   /* ===== Serviços: estilos da seção de listagens (pet shop e veterinários) — INÍCIO ===== */
   .melhores-tutores .container{
     margin: 0 20px 0;
@@ -240,11 +254,12 @@ main .container{
     width: 80px;
   }
   /* ===== Serviços — FIM ===== */
-  .melhores-tutores .cards .local-casa{
+/* ===== Newslatter — INÍCIO ===== */
+.melhores-tutores .cards .local-casa{
     margin: 5px 0;
     color: var(--cinza);
-  }
-  .melhores-tutores .cards .nome-casa{
+}
+.melhores-tutores .cards .nome-casa{
     font-size: 30px;
     font-weight: 500;
 
@@ -298,6 +313,8 @@ main .container{
     background-color: var(--rosaescuro);
     cursor: pointer;
 }
+/* ===== Newslatter — FIM ===== */
+/* ===== Footer — INÍCIO ===== */
 footer{
     background-color: var(--rosaescuro);
 }
@@ -347,7 +364,9 @@ footer .container a{
 footer .container p{
     margin: 0;
 }
+/* ===== Footer — FIM ===== */
 @media (max-width: 960px) {
+    /* ===== Media 960 — INÍCIO ===== */
     .menu-icon{
         display: block;
         margin: 12px 14px 12px 12px;
@@ -456,9 +475,10 @@ footer .container p{
     footer .container .redes-sociais{
         justify-content: center;
     }
-
+    /* ===== Media 960 — FIM ===== */
 }
 @media (max-width: 440px) {
+    /* ===== Media 440 — INÍCIO ===== */
     .resultados .resultados-numero {
         flex-direction: column;
     }
@@ -466,6 +486,8 @@ footer .container p{
     main .container .principal h1 {
         font-size: 3rem;
     }
+    /* ===== Media 440 — FIM ===== */
 }
+
 
 
