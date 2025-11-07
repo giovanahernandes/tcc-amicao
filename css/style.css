@@ -184,14 +184,16 @@ main .container{
     display: flex;
     align-items: center;
 }
-.casa .container .casa-img{
+  .casa .container .casa-img{
     width: 50%;
-}
+  }
+
 .casa .casa-img img{
     width: 100%;
     border-radius: 10px;
 }
 .casa .casa-texto{
+    width: 40%;
     padding-left: 90px;
 }
 .casa .cata-texto h2{
@@ -206,18 +208,7 @@ main .container{
   .melhores-tutores .container{
     margin: 0 20px 0;
   }
-  /* Header da seção (rótulo azul + título) lado a lado */
-  .melhores-tutores > .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  .melhores-tutores .container h2{
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
+  /* Header da seção (rótulo azul + título) lado a lado) — REMOVIDO do global para não afetar a Home */
   .melhores-tutores .azul{
     font-size: 24px;
     font-weight: 600;
@@ -435,7 +426,7 @@ footer .container p{
     .casa .casa-img{
         width: 100%;
         text-align: center;
-        padding: 0%;
+        padding: 0;
     }
     .melhores-tutores .cards{
         flex-direction: column;
