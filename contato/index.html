@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <title>AmiCão • Contato</title>
   </head>
@@ -43,50 +44,56 @@
       </main>
     </div>
 
-    <main>
-      <section class="melhores-tutores">
-        <div class="container">
-          <h2>Onde estamos</h2>
+    <main class="pagina-contato">
+      <div class="mapa-full-width">
+        <div class="mapa-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8240347966175!2d-48.1789846!3d-21.7870703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f3e5f8bf9391%3A0x68e8bb94be4f163!2sEscola%20Estadual%20Pedro%20Jos%C3%A9%20Neto!5e0!3m2!1spt-BR!2sbr!4v1762483701148!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-        <div class="cards stack-cards">
-          <div class="card-item">
-            <p class="nome-pessoa">AmiCão • Sede</p>
-            <p class="contato"> R. Padre Duarte, 2170 - Centro, Araraquara - SP</p>
-            <p class="contato">CEP: 14801-310</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8240347966175!2d-48.1789846!3d-21.7870703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f3e5f8bf9391%3A0x68e8bb94be4f163!2sEscola%20Estadual%20Pedro%20Jos%C3%A9%20Neto!5e0!3m2!1spt-BR!2sbr!4v1762483701148!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div class="info-localizacao">
+          <h2>Nossa Localização</h2>
+          <p class="contato"><i class="fas fa-map-marker-alt"></i> R. Padre Duarte, 2170 - Centro, Araraquara - SP</p>
+          <p class="contato"><i class="fas fa-envelope"></i> <a href="mailto:contato@amicao.com">contato@amicao.com</a></p>
+          <p class="contato"><i class="fas fa-phone"></i> <a href="tel:+5516990000100">+55 (16) 99000-0100</a></p>
         </div>
-      </section>
+      </div>
 
       <section class="melhores-tutores">
-        <div class="container">
-          <h2>Fale com nossos especialistas</h2>
-        </div>
-        <div class="cards stack-cards">
-          <div class="card-item">
-            <p class="nome-pessoa">Ana Souza • Agente</p>
-            <p class="contato">Especialista em hospedagem e passeios</p>
-            <p class="contato">E-mail: <a href="mailto:ana.souza@amicao.com">ana.souza@amicao.com</a></p>
-            <p class="contato">Telefone/WhatsApp: <a href="tel:+5516990000001">+55 (16) 99000-0001</a></p>
-          </div>
-          <div class="card-item">
-            <p class="nome-pessoa">Bruno Lima • Agente</p>
-            <p class="contato">Atendimento a tutores e cuidadores</p>
-            <p class="contato">E-mail: <a href="mailto:bruno.lima@amicao.com">bruno.lima@amicao.com</a></p>
-            <p class="contato">Telefone/WhatsApp: <a href="tel:+5516990000002">+55 (16) 99000-0002</a></p>
-          </div>
-        </div>
-      </section>
 
-      <section class="melhores-tutores">
+      <section class="melhores-tutores equipe-contato">
         <div class="container">
-          <h2>Call Center</h2>
-        </div>
-        <div class="cards stack-cards">
-          <div class="card-item">
-            <p class="nome-pessoa">Central de Atendimento 24h</p>
-            <p class="contato">Telefone: <a href="tel:+5516990000100">+55 (16) 99000-0100</a></p>
-            <p class="contato">E-mail: <a href="mailto:suporte@amicao.com">suporte@amicao.com</a></p>
+          <h2>Nossa Equipe</h2>
+          <div class="cards">
+            <div class="card-item card-equipe">
+              <h3 class="nome-pessoa">Ana Souza</h3>
+              <p class="cargo">Agente de Hospedagem</p>
+              <div class="info-contato">
+                <p class="contato"><i class="fas fa-envelope"></i> <a href="mailto:ana.souza@amicao.com">ana.souza@amicao.com</a></p>
+                <p class="contato"><i class="fas fa-phone"></i> <a href="tel:+5516990000001">+55 (16) 99000-0001</a></p>
+              </div>
+            </div>
+            
+            <div class="card-item card-equipe">
+              <h3 class="nome-pessoa">Bruno Lima</h3>
+              <p class="cargo">Gerente de Atendimento</p>
+              <div class="info-contato">
+                <p class="contato"><i class="fas fa-envelope"></i> <a href="mailto:bruno.lima@amicao.com">bruno.lima@amicao.com</a></p>
+                <p class="contato"><i class="fas fa-phone"></i> <a href="tel:+5516990000002">+55 (16) 99000-0002</a></p>
+              </div>
+            </div>
+            
+            <div class="card-item card-equipe">
+              <h3 class="nome-pessoa">Atendimento 24h</h3>
+              <p class="cargo">Central de Suporte</p>
+              <div class="info-contato">
+                <p class="contato"><i class="fas fa-envelope"></i> <a href="mailto:suporte@amicao.com">suporte@amicao.com</a></p>
+                <p class="contato"><i class="fas fa-phone"></i> <a href="tel:+5516990000100">+55 (16) 99000-0100</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
