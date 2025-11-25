@@ -306,54 +306,28 @@ main .container{
 }
 /* ===== Newslatter — FIM ===== */
 /* ===== Footer — INÍCIO ===== */
-footer{
-    background-color: var(--rosaescuro);
+
+footer {
+  background: var(--rosaescuro);             /* cor de fundo — troque se quiser */
+  color: #f2f2f2;               /* cor do texto */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 0.95rem;
+  padding: 1rem 0;              /* espaçamento vertical */
+  border-top: 1px solid rgba(255,255,255,0.04);
 }
-footer .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    align-items: start;
-    gap: 40px;
-    padding: 40px;
-    color: white;
+
+footer .container {
+  width: min(1100px, 94%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* centraliza o conteúdo */
 }
-footer .container ul{
-    flex: 1 1 220px;
-    min-width: 220px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-footer .container h3{
-    margin: 0 0 16px;
-    font-weight: 600;
-}
-footer .container .redes-sociais{
-    margin-left: 0;
-    display: flex;
-    gap: 10px;
-}
-footer .container .redes-sociais img{
-    width: 30px;
-    margin-right: 0;
-}
-footer .container ul > p{
-    margin: 0;
-}
-footer.container ul{
-    margin-bottom: 40px;
-}
-footer .container li{
-    margin: 0;
-}
-footer .container a{
-    color: white;
-}
-footer .container p{
-    margin: 0;
+footer p {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
 }
 /* ===== Footer — FIM ===== */
 @media (max-width: 960px) {
