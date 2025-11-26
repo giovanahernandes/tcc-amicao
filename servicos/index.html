@@ -102,6 +102,44 @@
         </div>
       </section>
     </main>
+
+    <section class="melhores-tutores" style="background-color: #f9f9f9; padding: 60px 0;">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Nossos Cuidadores Profissionais</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; font-size: 1.1em; color: #555;">
+          Nossos cuidadores são profissionais qualificados e apaixonados por animais, prontos para oferecer o melhor cuidado para o seu pet com muito carinho e dedicação.
+        </p>
+        <div class="cards">
+          <div id="amanda-lima" class="card-item" style="text-align: center;">
+            <img src="../img/amanda-lima.svg" alt="Amanda Lima" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; border: 3px solid var(--rosaescuro);">
+            <p class="nome-pessoa" style="font-size: 1.3em; font-weight: bold; margin: 10px 0 5px;">Amanda Lima</p>
+            <p class="contato" style="color: var(--rosaescuro); font-weight: 500; margin-bottom: 10px;">Médica Veterinária - CRMV/SP 12.345</p>
+            <p class="contato">Formada pela UNESP com especialização em Comportamento Animal. Experiência de 8 anos com cães e gatos.</p>
+            <p class="contato"><strong>Áreas de atuação:</strong> Clínica geral, comportamento animal e nutrição.</p>
+            <button onclick="location.href='../feedback/index.html#amanda-lima-feedback'">Ver Avaliações</button>
+          </div>
+          
+          <div id="lucas-luan" class="card-item" style="text-align: center;">
+            <img src="../img/lucas-luan.svg" alt="Lucas Luan" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; border: 3px solid var(--rosaescuro);">
+            <p class="nome-pessoa" style="font-size: 1.3em; font-weight: bold; margin: 10px 0 5px;">Lucas Luan</p>
+            <p class="contato" style="color: var(--rosaescuro); font-weight: 500; margin-bottom: 10px;">Tosador Profissional - ABPET 7890</p>
+            <p class="contato">Especialista em tosa higiênica e estética canina. Mais de 5 anos de experiência em pet shops renomados.</p>
+            <p class="contato"><strong>Serviços:</strong> Tosa higiênica, tosa em raças específicas e banho terapêutico.</p>
+            <button onclick="location.href='../feedback/index.html#lucas-luan-feedback'">Ver Avaliações</button>
+          </div>
+          
+          <div id="eliana-silva" class="card-item" style="text-align: center;">
+            <img src="../img/eliana-silva.svg" alt="Eliana Silva" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 15px; border: 3px solid var(--rosaescuro);">
+            <p class="nome-pessoa" style="font-size: 1.3em; font-weight: bold; margin: 10px 0 5px;">Eliana Silva</p>
+            <p class="contato" style="color: var(--rosaescuro); font-weight: 500; margin-bottom: 10px;">Pet Sitter - Certificada ABPA</p>
+            <p class="contato">Cuidadora profissional com certificação internacional em Primeiros Socorros para Pets. Especialista em cuidados com filhotes e pets idosos.</p>
+            <p class="contato"><strong>Especialidades:</strong> Hospedagem em domicílio, passeios e cuidados especiais.</p>
+            <button onclick="location.href='../feedback/index.html#eliana-silva-feedback'">Ver Avaliações</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <p class="copyright">
@@ -109,5 +147,32 @@
         </p>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
+    <script>
+      // Rola até o cuidador específico quando a página carrega
+      document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const cuidador = urlParams.get('cuidador');
+        
+        if (cuidador) {
+          // Adiciona uma pequena pausa para garantir que o DOM esteja totalmente carregado
+          setTimeout(() => {
+            const elemento = document.getElementById(cuidador);
+            if (elemento) {
+              elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              
+              // Adiciona um destaque temporário
+              elemento.style.transition = 'box-shadow 0.5s';
+              elemento.style.boxShadow = '0 0 0 3px var(--rosaescuro)';
+              
+              // Remove o destaque após 3 segundos
+              setTimeout(() => {
+                elemento.style.boxShadow = 'none';
+              }, 3000);
+            }
+          }, 100);
+        }
+      });
+    </script>
   </body>
 </html>

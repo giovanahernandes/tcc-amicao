@@ -656,13 +656,27 @@ main .container{
     outline: none;
     color: var(--cinza);   
 }
-.newslatter .box-newslatter button{
+.newslatter .box-newslatter .botao{
+    display: inline-block;
     font-size: 15px;
     border: none;
     outline: none;
+    background: var(--rosaescuro);
+    color: var(--branco);
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.newslatter .box-newslatter .botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 14px;
-    color: white;
+    color: var(--branco);
     background-color: var(--rosaescuro);
     cursor: pointer;
 }
@@ -670,11 +684,11 @@ main .container{
 /* ===== Footer — INÍCIO ===== */
 
 footer {
-  background: var(--rosaescuro);             /* cor de fundo — troque se quiser */
+  background: var(--rosaescuro);             
   color: #f2f2f2;               /* cor do texto */
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   font-size: 0.95rem;
-  padding: 1rem 0;              /* espaçamento vertical */
+  padding: 1rem 0;              
   border-top: 1px solid rgba(255,255,255,0.04);
 }
 
@@ -683,7 +697,7 @@ footer .container {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;      /* centraliza o conteúdo */
+  justify-content: center;      
 }
 footer p {
   margin: 0;
@@ -693,7 +707,6 @@ footer p {
 }
 /* ===== Footer — FIM ===== */
 @media (max-width: 960px) {
-    /* ===== Media 960 — INÍCIO ===== */
     .menu-icon{
         display: block;
         margin: 12px 14px 12px 12px;
@@ -802,10 +815,8 @@ footer p {
     footer .container .redes-sociais{
         justify-content: center;
     }
-    /* ===== Media 960 — FIM ===== */
 }
-@media (max-width: 440px) {
-    /* ===== Media 440 — INÍCIO ===== */
+@media (max-width: 440px) { 
     .resultados .resultados-numero {
         flex-direction: column;
     }
@@ -813,8 +824,4 @@ footer p {
     main .container .principal h1 {
         font-size: 3rem;
     }
-    /* ===== Media 440 — FIM ===== */
 }
-
-
-
