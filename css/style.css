@@ -234,336 +234,185 @@ main .container{
     width: 100%;
     max-width: 720px;
   }
-  .melhores-tutores .cards .card-item{
+  .melhores-tutores .cards .card-item {
     width: 30%;
     text-align: center;
     padding: 30px 0;
-    border-radius: 20px;
-    box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
+    background: white;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
   }
-  .melhores-tutores .cards img{
-    width: 80px;
-  }
-  /* ===== Serviços — FIM ===== */
-/* ===== Newslatter — INÍCIO ===== */
-.melhores-tutores .cards .local-casa{
-    margin: 5px 0;
-    color: var(--cinza);
-}
-.melhores-tutores .cards .nome-casa{
-    font-size: 30px;
-    font-weight: 500;
-
-}
-.melhores-tutores .cards .contato {
+  
+  .melhores-tutores .card-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--segundacor);
     margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .melhores-tutores .card-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--rosaescuro);
+  }
+  
+  .melhores-tutores .card-item:hover img {
+    transform: scale(1.05);
+    border-color: var(--rosaescuro);
+  }
+  
+  .melhores-tutores .local-casa {
     color: var(--cinza);
-}
-
-.melhores-tutores .cards button {
-    padding: 10px 20px;
-    color: white;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .melhores-tutores .nome-pessoa {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--rosaescuro);
+    margin: 10px 0 15px;
+  }
+  
+  .melhores-tutores .card-item button {
     background-color: var(--rosaescuro);
+    color: white;
     border: none;
-}
-
-.melhores-tutores .cards .nome-pessoa {
-    font-size: 30px;
-}
-  
-/* ===== Estilos para a página de contato ===== */
-.pagina-contato {
-  padding: 40px 0;
-  background-color: #fff;
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  min-height: calc(100vh - 200px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Estilos para os ícones */
-.contato i {
-  width: 20px;
-  text-align: center;
-  margin-right: 10px;
-  color: var(--rosaescuro);
-}
-
-/* Estilos para os cards da equipe */
-.card-equipe {
-  text-align: center;
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-equipe .nome-pessoa {
-  font-size: 1.4rem !important;
-  margin-bottom: 5px !important;
-  border: none !important;
-  padding: 0 !important;
-  display: block;
-}
-
-.card-equipe .cargo {
-  color: var(--cinza);
-  font-style: italic;
-  margin-bottom: 15px;
-  font-size: 0.95rem;
-}
-
-.card-equipe .info-contato {
-  margin-top: auto;
-}
-
-/* Estilos para o card do mapa */
-/* Estilos antigos do card-mapa removidos pois não são mais necessários */
-
-.card-mapa .nome-pessoa {
-  margin-bottom: 20px !important;
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-
-/* Ajustes de responsividade */
-@media (max-width: 1024px) {
-  .mapa-container {
-    padding-bottom: 60%; /* Proporção mais alta para telas menores */
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    width: auto;
   }
-}
-
-@media (max-width: 767px) {
+  
+  .melhores-tutores .card-item button:hover {
+    background-color: #9c2f51;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(185, 55, 93, 0.3);
+  } 
+  /* Estilos específicos para a página de contato */
   .pagina-contato {
-    padding: 20px 0 40px;
+    padding: 60px 0;
   }
   
-  .melhores-tutores h2 {
-    font-size: 1.8rem !important;
-  }
-  
-  .card-item {
-    margin: 10px 0 !important;
-  }
-  
-  .mapa-container {
-    padding-bottom: 80%; /* Proporção ainda mais alta para mobile */
-    margin: 15px 0 !important;
-    width: 100% !important;
-  }
-}
-
-/* Efeito de hover nos cards */
-.card-equipe:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Melhorias nos links de contato */
-.contato a {
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.contato a:hover {
-  transform: translateX(3px);
-}
-
-/* Ajustes na seção da equipe */
-.equipe-contato {
-  background-color: #f9f9f9;
-  padding: 80px 0;
-  margin-top: 60px;
-  border-radius: 0 0 12px 12px;
-}
-
-.equipe-contato .card-item {
-  background: white;
-  border: 1px solid #eee;
-}
-
-/* Layout do Mapa e Informações */
-.mapa-full-width {
-  width: 100%;
-  max-width: 1400px;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-/* Container do Mapa */
-.mapa-container {
-  width: 100%;
-  height: 60vh;
-  min-height: 500px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  position: relative;
-  order: 2; /* Mapa fica abaixo em mobile */
-}
-
-.mapa-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Estilo das Informações */
-.info-localizacao {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  order: 1; /* Informações ficam em cima em mobile */
-}
-
-.info-localizacao h2 {
-  color: var(--rosaescuro);
-  margin-bottom: 25px;
-  font-size: 1.8rem;
-  text-align: center;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.info-localizacao h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: var(--rosaescuro);
-}
-
-.info-localizacao .contato {
-  margin: 20px 0;
-  font-size: 1.05rem;
-  color: #555;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.info-localizacao .contato:hover {
-  background-color: rgba(222, 49, 99, 0.05);
-  transform: translateX(5px);
-}
-
-.info-localizacao .contato i {
-  color: var(--rosaescuro);
-  margin-right: 15px;
-  width: 24px;
-  height: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-/* Layout para Desktop */
-@media (min-width: 1024px) {
   .mapa-full-width {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 0 40px;
+    width: 100%;
+    margin-bottom: 60px;
   }
   
   .mapa-container {
-    width: 65%;
-    height: 500px;
-    order: 2;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
   }
   
   .info-localizacao {
-    width: 35%;
-    padding: 35px 30px;
-    order: 1;
-    position: sticky;
-    top: 30px;
-  }
-  
-  .info-localizacao .contato {
-    margin: 25px 0;
-  }
-}
-
-/* Ajustes para tablets */
-@media (max-width: 1023px) and (min-width: 768px) {
-  .mapa-container {
-    height: 50vh;
-  }
-  
-  .info-localizacao {
-    padding: 25px;
-  }
-}
-
-/* Ajustes para mobile */
-@media (max-width: 767px) {
-  .mapa-container {
-    height: 50vh;
-    min-height: 350px;
-  }
-  
-  .info-localizacao {
-    padding: 20px;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--segundacor);
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .info-localizacao h2 {
-    font-size: 1.6rem;
+    color: var(--rosaescuro);
     margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
   }
   
-  .info-localizacao .contato {
-    font-size: 1rem;
-    margin: 15px 0;
-    padding: 8px 10px;
+  .info-localizacao h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--rosaescuro);
   }
-}
-
-/* Estilos duplicados removidos - já definidos acima */
-
-/* Estilos para o iframe do mapa */
-
-  /* Estilos para os cards de contato */
-  .melhores-tutores .card-item {
+  
+  .contato {
+    margin: 12px 0;
+    color: var(--cinza);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .contato i {
+    color: var(--rosaescuro);
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .contato a {
+    color: var(--rosaescuro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contato a:hover {
+    color: #8c2a4a;
+    text-decoration: underline;
+  }
+  
+  /* Estilos para os cards da equipe na página de contato */
+  .equipe-contato .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .equipe-contato .card-item {
     background: white;
     border-radius: 12px;
     padding: 30px;
-    margin: 15px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    width: calc(33.333% - 20px);
+    text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
   }
-
-  .melhores-tutores .card-item:hover {
+  
+  .equipe-contato .card-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
-
-  .melhores-tutores .nome-pessoa {
-    font-size: 1.5rem;
+  
+  .equipe-contato .nome-pessoa {
     color: var(--rosaescuro);
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
     font-weight: 600;
-    border-bottom: 2px solid var(--rosaescuro);
-    padding-bottom: 10px;
-    display: inline-block;
+  }
+  
+  .equipe-contato .cargo {
+    color: var(--cinza);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
 
   .melhores-tutores .contato {
